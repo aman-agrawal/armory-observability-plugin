@@ -53,7 +53,7 @@ subprojects { subProject ->
         compileOnly "io.spinnaker.kork:kork-core:${korkVersion}"
         compileOnly "io.spinnaker.kork:kork-web:${korkVersion}"
         // Start Prometheus deps
-        implementation("io.micrometer:micrometer-registry-prometheus:1.11.5") {
+        implementation("io.micrometer:micrometer-registry-prometheus:1.10.9") {
             exclude group: 'io.micrometer', module: 'micrometer-core'
         }
         implementation group: 'io.prometheus', name: 'simpleclient_common', version: '0.16.0'// needs to match micrometer-registry-prometheus
